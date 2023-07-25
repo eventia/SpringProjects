@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spring.petclinic.dao.SpecialtiesDao">
+
+  <select id="vetselect_viewDao" resultType="com.spring.petclinic.dto.SpecialtiesDto">
+    SELECT id, name FROM specialties ORDER BY id ASC
+  </select>
+
+  <select id="specialtieslistDao" resultType="com.spring.petclinic.dto.SpecialtiesDto">
+    SELECT * FROM SPECIALTIES ORDER BY ID ASC
+  </select>
+
+</mapper>
